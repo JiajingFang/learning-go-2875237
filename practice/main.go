@@ -11,7 +11,7 @@ func main() {
 	colors = append(colors, "Purple")
 	fmt.Println(colors)
 
-	colors = append(colors[1:len(colors)])
+	colors = append(colors[1:])
 	fmt.Println(colors)
 
 	colors = append(colors[:len(colors)-1])
