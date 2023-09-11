@@ -3,12 +3,11 @@ package main
 import (
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 )
 
 func main() {
-	content := "Hello from Go!"
+	content := "Hello from Jiajing !!!!!!!!"
 	file, err := os.Create("./fromString.txt")
 	checkError(err)
 	length, err := io.WriteString(file, content)
@@ -19,7 +18,7 @@ func main() {
 }
 
 func readFile(fileName string) {
-	data, err := ioutil.ReadFile(fileName)
+	data, err := os.ReadFile(fileName)
 	checkError(err)
 	fmt.Println("Text read from file:", string(data))
 }
